@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+  /*background-image: url('img/fondo.jpg');*/
+  /*background-position: 50px 25px;*/
+  /*background-position: 20% 10%;*/
+  /*background-position: left top;*/
+  /*background-position: left center;*/
+  /*background-position: center center;*/
+  height: 1800px;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;*/
+  background: url('img/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.form-register{
+ width: 400px;
+ background: #24303c;
+ padding: 80px;
+ margin: auto;
+ margin-top: 100px;
+ border-radius: 5px;
+ font-family: 'calibri';
+ color: white;
+ box-shadow: 7px 13px 37px #000;
+ background: rgba(255, 255, 255, 0.2);
+
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;  
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+input{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}

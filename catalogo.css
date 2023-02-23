@@ -1,0 +1,258 @@
+/* Reinicio de padding de la página */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    background: black;
+}
+body::-webkit-scrollbar-thumb {
+    background: #b5040e;
+    border-radius: 10px;
+}
+/* cuerpo de la página */
+body {
+    backdrop-filter: brightness(50%);
+    background: #151515;
+    background-size: contain;
+    font-family: sans-serif;
+
+}
+
+/* clase head*/
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* clase menu*/
+.menu{
+    display: flex;
+    background: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* clase logo -> a*/
+.logo a {
+    text-decoration: none;
+    color: #b5040e;
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+/* clase menu -> a*/
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* clase menu -> a(animación de puesta sobre el cursor) */
+.menu a:hover {
+    background: #930000;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation: mymove 1s infinite;
+}
+
+
+@keyframes mymove {
+    50% {background-color: #ff0000;}
+}
+
+/* clase header ajustar el inicio del contenido*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+/* organización del contenido */
+.content {
+    height: 50px;
+    display: flow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de la clase title */
+.title {
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #b5040e;
+    font-family: fantasy;
+}
+
+/* estilo del texto */
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 20px;
+}
+/*2barra*/
+.secondhead{
+    width: 100%;
+    position: fixed;
+    top: 63px;
+    display: flex;
+    background: #e3ddd9;
+}
+.nav{
+    list-style: none;
+    width: 500px;
+}
+.nav li a{
+    font-size: 20px;
+    background: black;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+}
+.nav li a:hover {
+    background: #b5040e;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display:none;
+    position: absolute;
+    min-width:140px;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.btn btn-secondary dropdown-toggle{
+    background: #ffff;
+    color: black;
+    text-decoration: none;
+
+}
+/*barra de busqueda*/
+#imput-search{
+    color: #ffffff;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+
+}
+
+.content-search{
+    color: #e3ddd9;
+
+}
+tbody tr td a{
+    color: #000000;
+}
+.headbartwo{
+    color: #e3ddd9;
+}
+/*---------------------*
+#imput-search{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+
+}
+.content-search{
+    color: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,0.3);
+
+}
+.content-table{
+    width: 80%;
+    max-height: 200px;
+    height: auto;
+    background: rgba(0,0,0,0.3);
+    margin-left: 10px;
+
+}
+.content-table table{
+    width: 100%;
+}
+
+/*catalogo*/
+
+
+/*pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #282828;
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:570px;
+    padding: 3px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #ee5454;
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #757575;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.pie-pagina .grupo-2{
+    background-color: #111111;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

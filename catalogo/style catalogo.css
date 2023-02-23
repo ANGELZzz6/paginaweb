@@ -1,0 +1,121 @@
+/* Reinicio de padding de la página */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* cuerpo de la página */
+body {
+    background-color: #333232;
+    background-size: cover;
+    font-family: sans-serif;
+
+
+}
+
+/* clase head*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* clase menu*/
+.menu{
+    display: flex;
+    background: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* clase logo -> a*/
+.logo a {
+    text-decoration: none;
+    color: #b5040e;
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+/* clase menu -> a*/
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* clase menu -> a(animación de puesta sobre el cursor) */
+.menu a:hover {
+    background: #930000;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation: mymove 1s infinite;
+}
+
+
+@keyframes mymove {
+    50% {background-color: #ff0000;}
+}
+
+/* clase header ajustar el inicio del contenido*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+/* organización del contenido */
+.content {
+    height: 50px;
+    display: flow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de la clase title */
+.title {
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #b5040e;
+}
+
+/* estilo del texto */
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 20px;
+}
+.col{
+    background-color: #e3ddd9;
+    color: #e3ddd9;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* estilo del bloocke del pie de pagina */
+.footer{
+    color: #fdf5f5;
+    background: #484848;
+    right: auto;
+}
+
+
+

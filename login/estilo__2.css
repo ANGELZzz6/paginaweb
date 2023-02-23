@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* cuerpo de la página */
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background: #4B4B4BFF;
+}
+
+/* clase head*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* clase menu*/
+.menu{
+    display: flex;
+    background: none;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* clase logo -> a*/
+.logo a {
+    text-decoration: none;
+    color: #FFFFFFFF;
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+/* clase menu -> a*/
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* clase menu -> a(animación de puesta sobre el cursor) */
+.menu a:hover {
+    background: #930000;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation: mymove 1s infinite;
+}
+
+
+@keyframes mymove {
+    50% {background-color: #ff0000;}
+}
+
+/* clase header ajustar el inicio del contenido*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+/* organización del contenido */
+.content {
+    height: 50px;
+    display: flow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de la clase title */
+.title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* estilo del texto */
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 20px;
+}
+.contenedor{
+ width: 400px;
+ background: #24303c;
+ padding: 30px;
+ border-radius: 5px;
+ font-family: 'calibri';
+ color: white;
+ object-position: center;
+ box-shadow: 7px 13px 37px #000;
+ background: rgba(255, 255, 255, 0.2);
+
+}
+
+.login{
+  background: #fff;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+.contenedor h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ed2523;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.contenedor a{
+    color: #ffffff;
+    text-decoration: none;  
+}
+
+.contenedor a:hover{
+    color: white;
+    text-decoration: underline;  
+}
+
+.contenedor p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+input{
+    width: 100%;
+    background: #ec2523;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.conte{
+    margin-top: 10px;
+
+}
